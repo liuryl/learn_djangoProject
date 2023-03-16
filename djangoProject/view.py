@@ -35,3 +35,14 @@ def runoob(request):
     # 内容安全无需转译
     # view_str="<a href='https://www.runoob.com/'>点击跳转</a>"
     # return render(request,"runoob.html",{"view_str":view_str})
+    # if/else判断
+    # view_num=88
+    # return render(request,"runoob.html",{"num":view_num})
+    # for循环
+    # view_list=["菜鸟教程","菜鸟教程1","菜鸟教程2","菜鸟教程3"]
+    # return render(request,"runoob.html",{"view_list":view_list})
+    #  便利字典
+    #  view_dict={"name":"菜鸟教程","age":"18"}
+    #  return render(request,"runoob.html",{"view_dict":view_dict})
+    view_list=["a","b","c","d","e"]
+    return render(request,"runoob.html",{"listvar":view_list})

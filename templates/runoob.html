@@ -38,4 +38,39 @@
 {#safe：将字符串标记为安全，无需转驿#}
 {#{{ view_str|safe }}#}
 
-{##}
+{#if else判断#}
+{#{% if num > 90 and num <= 100 %}#}
+{#    优秀#}
+{#{% elif num > 60 and num <= 90 %}#}
+{#    合格#}
+{#{% else %}#}
+{#    一边玩去#}
+{#{% endif %}#}
+
+{#for循环#}
+{#{% for i in view_list %}#}
+{#{{ i }}#}
+{#{% endfor %}#}
+{#反向for+reversed#}
+{#{% for i in view_list reversed%}#}
+{#{{ i }}#}
+{#{% endfor %}#}
+{#便利字典#}
+{#{% for i,j in view_dict.items %}#}
+{#{{ i }}---{{ j }}#}
+{#{% endfor %}#}
+{#在{% for %}标签中可以通过{{forloop}}变量获取循环序号#}
+{#forloop.counter顺序获取循环序号从1开始计算#}
+{#forloop.counter0从零开始计算#}
+{#forloop.revcounter获取倒叙循环序号，结尾序号为1#}
+{#forloop.revcounter结尾序号为0#}
+{#forloop.first（一般配合if标签使用)第一条数据返回TURE其余为FALSE#}
+{#forloop.last最后为TURE其余为FALSE #}
+{% for lii in listvar %}
+    {{ forloop.counter }}
+    {{ forloop.counter0 }}
+    {{ forloop.revcounter }}
+    {{ forloop.revcounter0 }}
+    {{ forloop.first }}
+    {{ forloop.last }}
+{% endfor %}
