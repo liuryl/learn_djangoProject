@@ -1,0 +1,41 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+{#<h1>{{ hello }}</h1>#}
+{#<p>{{ name }}</p>#}
+
+{#读取整个列表#}
+{#<p>{{ view_list }}</p>#}
+
+{#首个元素#}
+{#<p>{{ view_list.0 }}</p>#}
+
+{#字典#}
+{#<p>{{ view_dict }}</p>#}
+{#<p>{{ view_dict.name }}</p>#}
+
+
+
+{#过滤器；{{ 变量名|过滤器：可选参数 }}#}
+{#{{ name|lower 变为小写}}#}
+{#{{ my_list｜first|up 首字母大写}}#}
+{#{{bio|truncatewords:"30" bio变量前三十个字母}}#}
+{#addslash:添加反斜杠到任何反斜杠，单引号，双引号前#}
+{#length：变量长度#}
+{#data：按照指定的格式参数化data或者datatime#}
+{#default：为变量提供默认值，如果view传递的为false则使用指定的默认值#}
+{#{{ name|filesizeformat 以易读的方式现实文件大小}}#}
+{#{{ time|date:"Y-m-d" }}#}
+{#{{ view_str|truncatechars:2 }}#}
+{#safe：将字符串标记为安全，无需转驿#}
+{#{{ view_str|safe }}#}
+
+{##}
